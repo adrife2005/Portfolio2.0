@@ -3,26 +3,32 @@
                     <h2>GET IN TOUCH</h2>
 
                     <form id="form">
-                        <div class="contact-item-form-1 mb-2">
-                            <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="off" required>
+                        <div class="flex">
+                             <div class="contact-item-form mb-2">
+                                <input class="item" type="text" id="name" name="name" placeholder="Full Name" autocomplete="off" required>
+                            </div>
+                            <div class="contact-item-form mb-2">
+                                <input  class="item" type="email" id="email" name="email" placeholder="Email Address" autocomplete="off" required >
+                            </div>
                         </div>
-                        <div class="contact-item-form-2 mb-2">
-                            <input type="email" id="email" name="email" placeholder="Email" autocomplete="off" required >
+                        <div class="flex">
+                            <div class="contact-item-form mb-2">
+                                <input class="item"  type="text" id="proyect" name="proyect" placeholder="Proyect Name" autocomplete="off"  required>
+                            </div>
+                            <div class="contact-item-form mb-2">
+                                <input class="item"  type="text" id="subject" name="subject" placeholder="Subject" autocomplete="off" required>
+                            </div>
                         </div>
-                         <div class="contact-item-form-3 mb-2">
-                            <input type="text" id="proyect" name="proyect" placeholder="Proyect Name" autocomplete="off"  required>
+                        <div class="flex-textarea">
+                            <div class="contact-item-form-textarea textarea-field mb-2">
+                                <textarea class="item"  name="msg" id="msg" cols="30"  rows="8" placeholder="Message" autocomplete="off" required></textarea>
+                            </div>
                         </div>
-                        <div class="contact-item-form-1 mb-2">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" autocomplete="off" required>
-                        </div>
-                        <div class="contact-item-form-4 mb-2">
-                            <textarea name="msg" id="msg"  rows="8" placeholder="Message" required></textarea>
-                        </div>
-                        <div class="contact-item-form-5">
-                            <input class="a" type="submit" id="submit" value="Send" >
-                        </div>
+                            <button class="btn" type="submit" id="submit">Send Email</button>
+
+                             <a href="/"><h3 class="btn">Back to Home</h3></a>
+
                     </form>
 
-            <a href="/"><h3 class="a mt-1">Back to Home</h3></a>
 
 </div>
