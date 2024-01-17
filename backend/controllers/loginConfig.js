@@ -8,7 +8,11 @@ const User = require("../models/userModel");
 const getData = asyncHandler(async (req, res) => {
   const getUsers = await User.find();
 
-  await res.status(200).json(getUsers);
+  if ("/login") {
+    res.redirect("/");
+  }
+
+  await res.status(200).send(getUsers);
 });
 
 // @desc Set data

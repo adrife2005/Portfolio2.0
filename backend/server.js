@@ -1,14 +1,17 @@
 const express = require("express");
 const colors = require("colors");
 const path = require("path");
-const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const exphb = require("express-handlebars");
 const connectDB = require("./config/db");
 const { errorHandler } = require("./middleware/errorMidleware");
+const morgan = require("morgan");
 const PORT = process.env.PORT || 5000;
 
 const app = express();
+
+// log requests
+app.use(morgan("short"));
 
 // Init database
 connectDB();
